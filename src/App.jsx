@@ -7,7 +7,7 @@ import Resume from "./containers/resume";
 import Skills from "./containers/skills";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/navbar";
-import { BrowserRouter as Router } from "react-router-dom";
+
 function App() {
   return (
     <>
