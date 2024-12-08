@@ -4,7 +4,7 @@
 }
 
 
-.container-home {
+.containerHome {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,14 +13,14 @@
 }
 
 
-.container-home-hob {
+.containerHomeHob {
   display: flex;
   flex-direction: column;
   /* width: 150; */
   margin-left: 80px;
 }
 
-.container-home-hob p {
+.containerHomeHob p {
   font-size: 20px;
   font-weight: 800;
   padding: 10px;
@@ -52,14 +52,14 @@
   margin: 0; /* Remove default margin */
 }
 
-.middle-part-home {
+.middlePartHome {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-items: center;
 }
 
-.text-welcome {
+.textWelcome {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +96,7 @@
 
 
 
-.container-home-top {
+.containerHomeTop {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -113,7 +113,7 @@
   justify-content: center;
   align-items: center;
 }
-.center-image {
+.centerImage {
   height: 300px;
   width: 300px;
   border-radius: 100%;

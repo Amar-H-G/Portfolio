@@ -1,0 +1,25 @@
+.container{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.heading{
+  margin-top: 10px;
+}
+.container-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 40px;
+}
+.first{
+
+}
