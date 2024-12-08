@@ -11,18 +11,17 @@ import NavBar from "./components/navbar";
 function App() {
   return (
     <>
-      
-        <NavBar />
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/skills" element={<Skills />} />
-          </Routes>
-        </div>
+      <NavBar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/skills" element={<Skills />} />
+        </Routes>
+      </div>
     </>
   );
 }
