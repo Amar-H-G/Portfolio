@@ -1,0 +1,11 @@
+/* body {
+  background: radial-gradient(circle, #2C2C54, #1E1E2F);
+  /* background-color: #0D1117; */
+  /* backdrop-filter: blur(10px); */
+  /* color: white; */
+/* }  */
+
+body {
+  background: radial-gradient(circle, #2c2c54, #1e1e2f);
+  color: white;
+}

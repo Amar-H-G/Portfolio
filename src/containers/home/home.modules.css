@@ -1,0 +1,179 @@
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+  --bg-color: rgb(40, 47, 97);
+}
+
+
+.container-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+
+.container-home-hob {
+  display: flex;
+  flex-direction: column;
+  width: 150;
+}
+
+.container-home-hob p {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  color: #ffd700; /* Gold text color */
+  background-color: #9e6bc2; /* Indigo background color */
+  animation: fadeInSlideUp 9s ease-in-out infinite; /* Infinite loop */
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+.movies {
+  line-height: 1; /* Remove extra line height */
+  margin: 0; /* Remove default margin */
+}
+
+.middle-part-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+
+.text-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  overflow: hidden; /* Ensures the text is visible only within the container */
+}
+
+.profile {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px;
+  display: inline-block;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide anything outside the container */
+  animation: typing 8s steps(50) infinite; /* Apply typing animation */
+}
+
+
+/* Animation to create typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+
+
+.container-home-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.center {
+  height: 380px;
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-image {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  animation-name: myImage;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myImage {
+  0% {
+    border-color: #FF6347; /* Tomato Red */
+    transform: translate(0px 0px);
+    box-shadow: 10px 10px 100px 50px #FF6347;
+  }
+  25% {
+    border-color: #FF4500; /* Orange-Red */
+    box-shadow: 10px 10px 100px 50px #FF4500;
+  }
+  50% {
+    border-color: #1E90FF; /* Dodger Blue */
+    transform: translate(0px 10px);
+    box-shadow: 10px 10px 100px 50px #1E90FF;
+  }
+  75% {
+    border-color: #32CD32; /* Lime Green */
+    box-shadow: 10px 10px 100px 50px #32CD32;
+  }
+  100% {
+    border-color: #8A2BE2; /* Blue Violet */
+    transform: translate(0px -10px);
+    box-shadow: 10px 10px 100px 50px #8A2BE2;
+  }
+}
+
+
+
+.left, .right {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: transparent; /* No background color */
+  border-radius: 20px; /* Rounded corners */
+  
+  padding: 5px; /* Optional padding */
+  font-size: 24px; /* Text size */
+  color: white; /* White text color */
+
+}
+
+.left h1, .right h1 {
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow; 
+  margin: 10px;
+}
+
+.right{
+  margin-left: 20px;
+}
+
+.left{
+  margin-right: 20px;
+}
+
+.passion {
+  font-weight: 900;
+  padding: 20px;
+}
