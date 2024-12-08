@@ -7,6 +7,7 @@ import Resume from "./containers/resume";
 import Skills from "./containers/skills";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/navbar";
+import Experience from "./containers/experience"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/project" element={<Project />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/skills" element={<Skills />} />
         </Routes>
       </div>

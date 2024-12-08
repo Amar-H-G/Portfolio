@@ -16,7 +16,8 @@
 .container-home-hob {
   display: flex;
   flex-direction: column;
-  width: 150;
+  /* width: 150; */
+  margin-left: 80px;
 }
 
 .container-home-hob p {
@@ -73,6 +74,8 @@
   font-size: 30px;
   font-weight: 400;
   padding: 10px;
+  /* color: yellowgreen; */
+  text-shadow: 0 0 5px yellowgreen, 0 0 10px yellowgreen, 0 0 20px yellowgreen, 0 0 30px yellowgreen, 0 0 40px yellowgreen;
   display: inline-block;
   white-space: nowrap; /* Prevent text from wrapping */
   overflow: hidden; /* Hide anything outside the container */
