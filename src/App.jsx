@@ -5,12 +5,13 @@ import Home from "./containers/home";
 import Project from "./containers/project";
 import Resume from "./containers/resume";
 import Skills from "./containers/skills";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/navbar";
 
 function App() {
   return (
     <>
+    <Router basename="/portfolio">
       <NavBar />
       <div className="container">
         <Routes>
@@ -22,6 +23,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
         </Routes>
       </div>
+      </Router>
     </>
   );
 }
