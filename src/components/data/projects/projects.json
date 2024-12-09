@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "imgSrc": "localShop.jpeg",
+    "title": "LocalShop",
+    "about": "This Project made with Python & Django. It's a full stack project",
+    "link": "http://LocalShop.pythonanywhere.com",
+    "code": "https://github.com/Amar-H-G/LocalShop"
+  },
+
+  {
+    "id": 2,
+    "imgSrc": "calculator.jpeg",
+    "title": "Calculator",
+    "about": "This is made with React",
+    "link": "http://calculator-ashy-rho.vercel.app",
+    "code": "https://github.com/Amar-H-G/React-Calculator"
+  },
+  {
+    "id": 3,
+    "imgSrc": "cricket.jpeg",
+    "title": "Cricket Game",
+    "about": "This is made with Html, Css and JavaScript",
+    "link": "https://amar-h-g.github.io/CricketGame/",
+    "code": "https://github.com/Amar-H-G/CricketGame"
+  },
+  {
+    "id": 4,
+    "imgSrc": "myntra.png",
+    "title": "Myntra Clone",
+    "about": "This is made with Html, Css and JavaScript",
+    "link": "http://myntra-clone-wine.vercel.app",
+    "code": "https://github.com/Amar-H-G/Myntra-Clone"
+  },
+  {
+    "id": 5,
+    "imgSrc": "todo.png",
+    "title": "Todo App",
+    "about": "This is made with React",
+    "link": "http://todo-app-plum-mu-58.vercel.app",
+    "code": "https://github.com/Amar-H-G/TodoApp"
+  }
+]
