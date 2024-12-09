@@ -1,0 +1,33 @@
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+}
+
+
+.heading h1 {
+  color: white;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
+    0 0 40px yellow;
+    margin-bottom: 30px;
+}
+
+.contactIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contactIcons .icons:hover{
+font-size: 100px;
+box-shadow: var(--box-shadow);
+background-color: aqua;
+}
+.contactIcons .icons{
+  font-size: 90px;
+  margin: 20px;
+  background-color: black;
+  border-radius: 100%;
+  color: white;
+  padding: 10px;
+  border: 1px solid yellow;
+}
