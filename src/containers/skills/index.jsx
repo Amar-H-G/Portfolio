@@ -5,20 +5,20 @@ const Skills = () => {
   return (
     <>
       <div className={skillStyle.container}>
-        <div className="heading">
-          <h1>Skills</h1>
+        <div className={skillStyle.heading}>
+          <h1 className={skillStyle.head}>Skills</h1>
         </div>
-        <div className="container-body">
-          {skills.map((data) => {
-            return (
-              <div className="items" key={data.id}>
-                <div className="item">
+        <div className={skillStyle.itemsContainer}>
+          <div className={skillStyle.items}>
+            {skills.map((data) => {
+              return (
+                <div className={skillStyle.item} key={data.title}>
                   <img src={`skills-image/${data.imgsrc}`} alt="" />
-                  <h3>{data.title}</h3>
+                  <span>{data.title}</span>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

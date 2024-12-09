@@ -11,7 +11,7 @@ const Experience = () => {
         <div className={`${styles.Ebody}`}>
           <div className={styles.text}>
             <h2>Student</h2>
-            <h3>
+            <h3 className={styles.head}>
               I am a student at <br />
               <span>
                 Dr. Sudhir Chandra Sur Institute of Technology and Sports
