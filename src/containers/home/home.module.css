@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   /* width: 150; */
-  margin-left: 80px;
+  margin-left: 30px;
 }
 
 .containerHomeHob p {
@@ -63,6 +63,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   width: 40%;
   text-align: center;
   border-radius: 20px;
@@ -92,8 +93,6 @@
     width: 100%;
   }
 }
-
-
 
 
 .containerHomeTop {

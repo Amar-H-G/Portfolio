@@ -1,31 +1,32 @@
-.navbar{
+.navbar {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;justify-content: space-between;
+  justify-content: center;
+  justify-content: space-between;
 }
-a{
+.navItems {
   text-decoration: none;
   color: white;
   font-size: 25px;
   font-weight: 1000;
 }
-.nav-items{
+.navItems {
   padding: 18px;
 }
-.left-nav{
+.leftNav {
   font-size: 30px;
   font-weight: 1000;
 }
 
-.nav-items {
+.navItems {
   display: inline-block;
-  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out,
+    color 0.3s ease-in-out;
 }
 
-.nav-items:hover {
+.navItems:hover {
   transform: rotate(20deg);
   color: yellow;
   text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
 }
-

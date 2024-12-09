@@ -1,20 +1,33 @@
-import { Link } from 'react-router-dom';
-import './Nav.modules.css'
+import { Link } from "react-router-dom";
+import styles from "./Nav.module.css";
 
 const NavBar = () => {
   return (
     <>
-      <div className="container navbar">
-        <div className="left-nav nav-items">Portfolio</div>
-        <div className="right-nav">
-          <Link className='nav-items' to="/">Home</Link>
-          <Link className='nav-items' to="/project">Projects</Link>
-          <Link className='nav-items' to="/skills">Skills</Link>
-          <Link className='nav-items' to="/resume">Resume</Link>
-          <Link className='nav-items' to="/experience">Experience</Link>
-          <Link className='nav-items' to="/contact">Contact</Link>
-          <Link className='nav-items' to="/about">About</Link>
-          
+      <div className={`container ${styles.navbar}`}>
+        <div className={`${styles.leftNav} ${styles.navItems}`}>Portfolio</div>
+        <div className={styles.rightNav}>
+          <Link className={styles.navItems} to="/">
+            Home
+          </Link>
+          <Link className={styles.navItems} to="/project">
+            Projects
+          </Link>
+          <Link className={styles.navItems} to="/skills">
+            Skills
+          </Link>
+          <Link className={styles.navItems} to="/resume">
+            Resume
+          </Link>
+          <Link className={styles.navItems} to="/experience">
+            Experience
+          </Link>
+          <Link className={styles.navItems} to="/contact">
+            Contact
+          </Link>
+          <Link className={styles.navItems} to="/about">
+            About
+          </Link>
         </div>
       </div>
     </>

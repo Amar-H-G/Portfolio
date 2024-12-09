@@ -3,10 +3,11 @@
 }
 
 .heading{
-  margin-left: 90px;
+  margin-left: 20px;
 }
 .head {
   font-size: 50px;
+  color: white;
   text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
     0 0 40px yellow;
 }
@@ -21,7 +22,7 @@
   flex-direction: column;
   background-color: black;
   margin: 20px;
-  width:calc(20%);
+  width:calc(22%);
   align-items: center;
   text-align: center;
   padding: 20px;
@@ -31,6 +32,11 @@
 }
 
 .container .items .item img {
-  width: 150px;
+  width: 70px;
   border-radius: inherit;
+}
+
+.container .items .item span{
+  font-size: 30px;
+  color: white;
 }

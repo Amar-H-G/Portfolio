@@ -10,6 +10,7 @@
 
 .heading h1 {
   font-size: 50px;
+  color: white;
   text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
     0 0 40px yellow;
   margin: 10px;
@@ -34,20 +35,20 @@
   box-shadow: var(--box-shadow);
 }
 
-h2 {
+.Ebody .text h2 {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
   margin: 10px 0 0 0;
   color: yellow;
 }
-p {
+.Ebody .text p {
   font-size: 20px;
   margin: 2px 0 0 0;
   color: yellowgreen;
   padding-bottom: 17px;
 }
-span {
+.Ebody .text span {
   font-size: 24px;
   font-weight: 1000;
   color: #7df9ff;
