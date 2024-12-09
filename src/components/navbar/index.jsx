@@ -4,7 +4,7 @@ import styles from "./Nav.module.css";
 const NavBar = () => {
   return (
     <>
-      <div className={`container ${styles.navbar}`}>
+      <div className={`container ${styles.navbar} `} data-aos="fade-down-left" data-aos-duration="2000" >
         <div className={`${styles.leftNav} ${styles.navItems}`}>Portfolio</div>
         <div className={styles.rightNav}>
           <Link className={styles.navItems} to="/">

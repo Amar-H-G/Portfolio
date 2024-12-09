@@ -6,7 +6,11 @@ const Project = () => {
   return (
     <>
       <div className={`my-3 ${styles.container}`}>
-        <div className={styles.heading}>
+        <div
+          className={styles.heading}
+          data-aos="zoom-out-right"
+          data-aos-duration="2000"
+        >
           <h1>Projects</h1>
         </div>
         <div className={`row  ${styles.containerProjects}`}>
@@ -14,7 +18,12 @@ const Project = () => {
             return (
               <>
                 <div key={projects.id} className="my-4 col-md-3 mx-4">
-                  <div className={styles.cardBox} style={{ width: "18rem" }}>
+                  <div
+                    className={styles.cardBox}
+                    style={{ width: "18rem" }}
+                    data-aos="zoom-in"
+                    data-aos-duration="2000"
+                  >
                     <div className={styles.img}>
                       <img
                         src={`projects/${projects.imgSrc}`}

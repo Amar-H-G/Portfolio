@@ -4,11 +4,19 @@ const Experience = () => {
   return (
     <>
       <div className={`ex ${styles.container}`}>
-        <div className={styles.heading}>
+        <div
+          className={styles.heading}
+          data-aos="fade-right"
+          data-aos-duration="3000"
+        >
           <h1>Experience</h1>
         </div>
 
-        <div className={`${styles.Ebody}`}>
+        <div
+          className={`${styles.Ebody}`}
+          data-aos="flip-up"
+          data-aos-duration="3000"
+        >
           <div className={styles.text}>
             <h2>Student</h2>
             <h3 className={styles.head}>
