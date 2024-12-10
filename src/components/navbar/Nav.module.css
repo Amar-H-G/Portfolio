@@ -5,6 +5,7 @@
   justify-content: center;
   justify-content: space-between;
 }
+
 .navItems {
   text-decoration: none;
   color: white;
@@ -15,8 +16,12 @@
   padding: 18px;
 }
 .leftNav {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 1000;
+  color: white;
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
+    0 0 40px yellow;
+  margin-bottom: 30px;
 }
 
 .navItems {
@@ -24,9 +29,8 @@
   transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out,
     color 0.3s ease-in-out;
 }
-
 .navItems:hover {
-  transform: rotate(20deg);
-  color: yellow;
-  text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+  transform: rotate(20deg) !important;
+  color: yellow !important;
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow !important;
 }
