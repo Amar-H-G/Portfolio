@@ -1,0 +1,56 @@
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+}
+
+
+.heading {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.heading h1 {
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
+    0 0 40px yellow;
+}
+.containerBody {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerBody .left {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  align-items: center;
+  justify-content: center;
+}
+.containerBody .left p{
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 400;
+  box-shadow: var(--box-shadow);
+  border-radius: inherit;
+}
+
+.containerBody .right{
+  background-color: black;
+  border-radius: 20px;
+  margin-left:20px;
+}
+.containerBody .right .textbutton{
+  font-size: 25px;
+  font-weight: 800;
+}
+.containerBody .right .textbutton:hover{
+  font-size: 30px;
+  background-color: skyblue;
+  box-shadow: var(--box-shadow);
+}

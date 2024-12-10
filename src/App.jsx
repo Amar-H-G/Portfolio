@@ -19,6 +19,7 @@ function App() {
   }, []);
   return (
     <>
+     
       <Router basename="/portfolio">
         <NavBar />
         <div className="container">
