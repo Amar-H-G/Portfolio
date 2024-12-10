@@ -1,5 +1,5 @@
 import styles from "./resume.module.css";
-import pdf from "../../resume-pdf/Amar-Patra.pdf";
+import pdf from "../../resume-pdf/my_resume_perfect.pdf";
 const Resume = () => {
   return (
     <>
