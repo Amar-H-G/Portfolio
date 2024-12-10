@@ -1,5 +1,5 @@
 import styles from "./home.module.css";
-import myPhoto from "../../assets/my-images/myPhoto.jpg";
+import myPhoto from "../../assets/my-images/myPhoto3.jpg";
 
 const Home = () => {
   return (
