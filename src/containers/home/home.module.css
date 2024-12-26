@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
   --bg-color: rgb(40, 47, 97);
 }
@@ -14,7 +14,6 @@
 .containerHomeHob {
   display: flex;
   flex-direction: column;
-  /* width: 150; */
   margin-left: 30px;
 }
 
@@ -26,9 +25,9 @@
   margin: 20px;
   opacity: 0;
   transform: translateY(20px);
-  color: #ffd700; /* Gold text color */
-  background-color: #030a03; /* Indigo background color */
-  animation: fadeInSlideUp 9s ease-in-out infinite; /* Infinite loop */
+  color: #ffd700;
+  background-color: #030a03;
+  animation: fadeInSlideUp 9s ease-in-out infinite;
 }
 
 @keyframes fadeInSlideUp {
@@ -46,8 +45,8 @@
   }
 }
 .movies {
-  line-height: 1; /* Remove extra line height */
-  margin: 0; /* Remove default margin */
+  line-height: 1;
+  margin: 0;
 }
 
 .middlePartHome {
@@ -66,23 +65,23 @@
   text-align: center;
   border-radius: 20px;
   margin-bottom: 10px;
-  overflow: hidden; /* Ensures the text is visible only within the container */
+  overflow: hidden;
 }
 
 .profile {
   font-size: 30px;
   font-weight: 400;
   padding: 10px;
-  /* color: yellowgreen; */
+
   text-shadow: 0 0 5px yellowgreen, 0 0 10px yellowgreen, 0 0 20px yellowgreen,
     0 0 30px yellowgreen, 0 0 40px yellowgreen;
   display: inline-block;
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden; /* Hide anything outside the container */
-  animation: typing 8s steps(50) infinite; /* Apply typing animation */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 8s steps(50) infinite;
 }
 
-/* Animation to create typing effect */
+
 @keyframes typing {
   0% {
     width: 0;
@@ -120,25 +119,25 @@
 
 @keyframes myImage {
   0% {
-    border-color: #ff6347; /* Tomato Red */
+    border-color: #ff6347;
     transform: translate(0px 0px);
     box-shadow: 10px 10px 100px 50px #ff6347;
   }
   25% {
-    border-color: #ff4500; /* Orange-Red */
+    border-color: #ff4500; 
     box-shadow: 10px 10px 100px 50px #ff4500;
   }
   50% {
-    border-color: #1e90ff; /* Dodger Blue */
+    border-color: #1e90ff;
     transform: translate(0px 10px);
     box-shadow: 10px 10px 100px 50px #1e90ff;
   }
   75% {
-    border-color: #32cd32; /* Lime Green */
+    border-color: #32cd32;
     box-shadow: 10px 10px 100px 50px #32cd32;
   }
   100% {
-    border-color: #8a2be2; /* Blue Violet */
+    border-color: #8a2be2; 
     transform: translate(0px -10px);
     box-shadow: 10px 10px 100px 50px #8a2be2;
   }
@@ -147,14 +146,14 @@
 .left,
 .right {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  background-color: transparent; /* No background color */
-  border-radius: 20px; /* Rounded corners */
+  justify-content: center; 
+  align-items: center; 
+  background-color: transparent; 
+  border-radius: 20px; 
 
-  padding: 5px; /* Optional padding */
-  font-size: 24px; /* Text size */
-  color: white; /* White text color */
+  padding: 5px;
+  font-size: 24px;
+  color: white;
 }
 
 .left h1,
@@ -175,4 +174,276 @@
 .passion {
   font-weight: 900;
   padding: 20px;
+}
+
+
+
+ */
+
+
+
+
+ :root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+  --bg-color: rgb(40, 47, 97);
+}
+
+/* Default styles for larger screens (desktop) */
+.containerHome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.containerHomeHob {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.containerHomeHob p {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  color: #ffd700; /* Gold text color */
+  background-color: #030a03; /* Indigo background color */
+  animation: fadeInSlideUp 9s ease-in-out infinite; /* Infinite loop */
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.movies {
+  line-height: 1;
+  margin: 0;
+}
+
+.middlePartHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textWelcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 40%;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.profile {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px;
+  text-shadow: 0 0 5px yellowgreen, 0 0 10px yellowgreen, 0 0 20px yellowgreen,
+    0 0 30px yellowgreen, 0 0 40px yellowgreen;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 8s steps(50) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.containerHomeTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.center {
+  height: 380px;
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerImage {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  animation-name: myImage;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myImage {
+  0% {
+    border-color: #ff6347;
+    transform: translate(0px 0px);
+    box-shadow: 10px 10px 100px 50px #ff6347;
+  }
+  25% {
+    border-color: #ff4500;
+    box-shadow: 10px 10px 100px 50px #ff4500;
+  }
+  50% {
+    border-color: #1e90ff;
+    transform: translate(0px 10px);
+    box-shadow: 10px 10px 100px 50px #1e90ff;
+  }
+  75% {
+    border-color: #32cd32;
+    box-shadow: 10px 10px 100px 50px #32cd32;
+  }
+  100% {
+    border-color: #8a2be2;
+    transform: translate(0px -10px);
+    box-shadow: 10px 10px 100px 50px #8a2be2;
+  }
+}
+
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 24px;
+  color: white;
+}
+
+.left h1,
+.right h1 {
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
+    0 0 40px yellow;
+  margin: 10px;
+}
+
+.right {
+  margin-left: 20px;
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.passion {
+  font-weight: 900;
+  padding: 20px;
+}
+
+/* Responsive Styles */
+
+/* For tablets (screen widths between 600px and 1024px) */
+@media (max-width: 1024px) {
+  .containerHome {
+    flex-direction: column; /* Stack containerHome items vertically */
+    align-items: center; /* Center horizontally */
+  }
+
+  .containerHomeTop {
+    flex-direction: column; /* Stack items vertically */
+    margin-left: 0;
+    gap: 30px;
+  }
+
+  .containerHomeHob p {
+    font-size: 18px; /* Smaller text */
+    margin: 15px;
+  }
+
+  .textWelcome {
+    width: 70%; /* Increase width for better readability */
+  }
+
+  .profile {
+    font-size: 24px; /* Reduce font size */
+  }
+
+  .center {
+    height: 300px;
+    width: 300px;
+  }
+
+  .centerImage {
+    height: 250px;
+    width: 250px;
+  }
+
+  .left,
+  .right {
+    font-size: 20px; /* Smaller font size */
+    padding: 10px;
+  }
+}
+
+/* For mobile devices (screen widths 600px and below) */
+@media (max-width: 600px) {
+  .containerHome {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .containerHomeTop {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .containerHomeHob p {
+    font-size: 16px; /* Even smaller text */
+    margin: 10px;
+  }
+
+  .textWelcome {
+    width: 80%; /* Adjust width */
+  }
+
+  .profile {
+    font-size: 20px; /* Smaller font size */
+  }
+
+  .center {
+    height: 250px;
+    width: 250px;
+  }
+
+  .centerImage {
+    height: 200px;
+    width: 200px;
+  }
+
+  .left,
+  .right {
+    font-size: 18px; /* Smaller font size */
+    padding: 8px;
+  }
 }

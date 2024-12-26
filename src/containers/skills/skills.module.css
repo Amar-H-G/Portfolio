@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
 }
 
@@ -39,4 +39,99 @@
 .container .items .item span{
   font-size: 30px;
   color: white;
+} */
+
+
+
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+}
+
+.heading {
+  margin-left: 20px;
+}
+
+.head {
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
+    0 0 40px yellow;
+}
+
+.container .items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .items .item {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  margin: 20px;
+  width: calc(22%);
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: var(--box-shadow);
+  gap: 6px;
+}
+
+.container .items .item img {
+  width: 70px;
+  border-radius: inherit;
+}
+
+.container .items .item span {
+  font-size: 30px;
+  color: white;
+}
+
+/* Responsive Styles */
+
+/* For tablets (screen widths between 600px and 1024px) */
+@media (max-width: 1024px) {
+  .head {
+    font-size: 40px; /* Smaller heading font size */
+  }
+
+  .container .items .item {
+    width: calc(45%); /* Adjust width to fit two items per row */
+  }
+
+  .container .items .item span {
+    font-size: 25px; /* Smaller text size for items */
+  }
+
+  .container .items .item img {
+    width: 60px; /* Adjust image size for better fit */
+  }
+}
+
+/* For mobile devices (screen widths 600px and below) */
+@media (max-width: 600px) {
+  .head {
+    font-size: 30px; /* Smaller heading font size */
+    margin-left: 10px; /* Adjust margin */
+  }
+
+  .container .items {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center items */
+  }
+
+  .container .items .item {
+    width: calc(80%); /* Adjust width to fit one item per row */
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+  }
+
+  .container .items .item span {
+    font-size: 20px; /* Smaller text size for items */
+  }
+
+  .container .items .item img {
+    width: 50px; /* Adjust image size for smaller screens */
+  }
 }

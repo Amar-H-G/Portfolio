@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
 }
 
@@ -57,4 +57,137 @@
   margin-top: 10px;
   text-align: center;
   color: yellowgreen;
+} */
+
+
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+}
+
+/* Default styles for larger screens (desktop) */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.heading h1 {
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
+    0 0 40px yellow;
+  margin: 10px;
+  margin-left: 80px;
+}
+
+.Ebody {
+  margin-top: 80px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 30px;
+  border: 0.5px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+
+.Ebody .text h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  color: yellow;
+}
+
+.Ebody .text p {
+  font-size: 20px;
+  margin: 2px 0 0 0;
+  color: yellowgreen;
+  padding-bottom: 17px;
+}
+
+.Ebody .text span {
+  font-size: 24px;
+  font-weight: 1000;
+  color: #7df9ff;
+}
+
+.head {
+  margin-top: 10px;
+  text-align: center;
+  color: yellowgreen;
+}
+
+/* Responsive Styles */
+
+/* For tablets (screen widths between 600px and 1024px) */
+@media (max-width: 1024px) {
+  .heading h1 {
+    font-size: 40px; /* Smaller font size */
+    margin-left: 50px;
+  }
+
+  .Ebody {
+    margin-top: 50px;
+  }
+
+  .text {
+    padding: 12px 25px;
+  }
+
+  .Ebody .text h2 {
+    font-size: 26px; /* Smaller heading text */
+  }
+
+  .Ebody .text p {
+    font-size: 18px; /* Smaller paragraph text */
+  }
+
+  .Ebody .text span {
+    font-size: 22px; /* Smaller span text */
+  }
+
+  .head {
+    font-size: 18px; /* Smaller head text */
+  }
+}
+
+/* For mobile devices (screen widths 600px and below) */
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 30px; /* Smaller font size */
+    margin-left: 20px;
+  }
+
+  .Ebody {
+    margin-top: 30px;
+  }
+
+  .text {
+    padding: 10px 20px;
+  }
+
+  .Ebody .text h2 {
+    font-size: 22px; /* Smaller heading text */
+  }
+
+  .Ebody .text p {
+    font-size: 16px; /* Smaller paragraph text */
+  }
+
+  .Ebody .text span {
+    font-size: 20px; /* Smaller span text */
+  }
+
+  .head {
+    font-size: 16px; /* Smaller head text */
+  }
 }

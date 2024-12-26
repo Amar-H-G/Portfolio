@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
 }
 
@@ -30,4 +30,77 @@ background-color: aqua;
   color: white;
   padding: 10px;
   border: 1px solid yellow;
+} */
+
+
+
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+}
+
+.heading h1 {
+  color: white;
+  font-size: 50px;
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow,
+    0 0 40px yellow;
+  margin-bottom: 30px;
+}
+
+.contactIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contactIcons .icons:hover {
+  font-size: 100px;
+  box-shadow: var(--box-shadow);
+  background-color: aqua;
+}
+
+.contactIcons .icons {
+  font-size: 90px;
+  margin: 20px;
+  background-color: black;
+  border-radius: 100%;
+  color: white;
+  padding: 10px;
+  border: 1px solid yellow;
+}
+
+/* Responsive Styles */
+
+/* For tablets (screen widths between 600px and 1024px) */
+@media (max-width: 1024px) {
+  .heading h1 {
+    font-size: 40px; /* Smaller font size for heading */
+  }
+
+  .contactIcons {
+    flex-direction: column; /* Stack the icons vertically */
+    align-items: center; /* Center the icons */
+  }
+
+  .contactIcons .icons {
+    font-size: 70px; /* Smaller icon size */
+    margin: 15px; /* Reduce margin between icons */
+  }
+}
+
+/* For mobile devices (screen widths 600px and below) */
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 30px; /* Smaller font size for heading */
+    margin-bottom: 20px; /* Reduce bottom margin */
+  }
+
+  .contactIcons {
+    flex-direction: column; /* Stack the icons vertically */
+    align-items: center; /* Center the icons */
+  }
+
+  .contactIcons .icons {
+    font-size: 60px; /* Even smaller icon size for mobile */
+    margin: 10px; /* Reduce margin between icons */
+  }
 }

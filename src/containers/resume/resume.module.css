@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
 }
 
@@ -53,4 +53,152 @@
   font-size: 30px;
   background-color: skyblue;
   box-shadow: var(--box-shadow);
+} */
+
+
+
+:root {
+  --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
+}
+
+.heading {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.heading h1 {
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow;
+  margin-bottom: 20px;
+}
+
+.containerBody {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.containerBody .left {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  align-items: center;
+  justify-content: center;
+}
+
+.containerBody .left p {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 400;
+  box-shadow: var(--box-shadow);
+  border-radius: inherit;
+}
+
+.containerBody .right {
+  background-color: black;
+  border-radius: 20px;
+  margin-left: 20px;
+  display: flex; /* Enable flexbox for alignment */
+  justify-content: center; /* Center button horizontally */
+  align-items: center; /* Center button vertically */
+}
+
+.containerBody .right .textbutton {
+  font-size: 25px;
+  font-weight: 800;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: yellow;
+  color: black;
+  border: none;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.containerBody .right .textbutton:hover {
+  font-size: 30px;
+  background-color: skyblue;
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+/* Responsive Styles */
+
+/* For tablets (screen widths between 600px and 1024px) */
+@media (max-width: 1024px) {
+  .heading h1 {
+    font-size: 40px; /* Smaller font size for heading */
+  }
+
+  .containerBody {
+    flex-direction: column; /* Stack the container vertically */
+    margin-top: 30px; /* Reduce top margin */
+  }
+
+  .containerBody .left,
+  .containerBody .right {
+    width: 80%; /* Adjust width for better fit on tablets */
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+  }
+
+  .containerBody .left p {
+    font-size: 18px; /* Smaller text size for paragraphs */
+  }
+
+  .containerBody .right .textbutton {
+    font-size: 20px; /* Adjust button font size for tablets */
+    padding: 12px 18px; /* Adjust padding */
+  }
+}
+
+/* For mobile devices (screen widths 600px and below) */
+@media (max-width: 600px) {
+  .heading h1 {
+    font-size: 30px; /* Smaller font size for heading */
+    margin-left: 10px; /* Adjust left margin */
+  }
+
+  .containerBody {
+    flex-direction: column; /* Stack the container vertically */
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  .containerBody .left{
+    width: 100%; /* Adjust width for better fit on mobile */
+    margin: 10px 0; /* Reduce margin between sections */
+  }
+  
+  .containerBody .right {
+    width: auto; /* Adjust width for better fit on mobile */
+    margin: 10px 0; /* Reduce margin between sections */
+  }
+
+  .containerBody .left p {
+    font-size: 16px; /* Smaller text size for paragraphs */
+  }
+
+  .containerBody .right .textbutton {
+    font-size: 18px; /* Adjust font size for better visibility on small screens */
+    padding: 12px 20px; /* Adjust padding for better click area */
+    width: auto; /* Ensure button doesn't stretch too wide */
+    text-align: center; /* Center the button text */
+    border-radius: 10px; /* Rounded corners for the button */
+    transition: all 0.3s ease; /* Smooth transition effect */
+  }
+
+  .containerBody .right .textbutton:hover {
+    font-size: 20px; /* Slightly bigger font on hover */
+    background-color: skyblue; /* Button color change on hover */
+    box-shadow: var(--box-shadow); /* Box shadow effect on hover */
+  }
 }
